@@ -244,11 +244,7 @@ class SignUpPage extends StatelessWidget {
       backgroundColor: kBackgroundColor,
       body: ListView(
         padding: EdgeInsets.all(defaultMargin),
-        children: [
-          title(),
-          inputSection(),
-          tacButton(),
-        ],
+        children: [title(), inputSection(), tacButton(), Column()],
       ),
     );
   }
