@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:pertama_kali2/shared/theme.dart';
+import 'package:pertama_kali2/ui/pages/home_page.dart';
 import 'package:pertama_kali2/ui/widget/custom_bottom_navigation_item.dart';
 
 class MainPage extends StatelessWidget {
@@ -9,6 +10,10 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Widget buildContent() {
+      return HomePage();
+    }
+
     Widget customBottomNavigation() {
       return Align(
         alignment: Alignment.bottomCenter,
@@ -48,6 +53,7 @@ class MainPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
+          buildContent(),
           customBottomNavigation(),
         ],
       ),

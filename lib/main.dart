@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:pertama_kali2/ui/pages/bonus_page.dart';
+import 'package:pertama_kali2/ui/pages/home_page.dart';
 import 'package:pertama_kali2/ui/pages/main_page.dart';
 
 import 'ui/pages/get_started_page.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/sign-up': (context) => SignUpPage(),
         '/bonus': (context) => BonusPage(),
         '/main': (context) => MainPage(),
+        '/home': (context) => HomePage(),
       },
     );
   }
