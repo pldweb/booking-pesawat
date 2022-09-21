@@ -184,7 +184,9 @@ class SignUpPage extends StatelessWidget {
         width: double.infinity,
         height: 55,
         child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, '/bonus');
+          },
           style: TextButton.styleFrom(
             backgroundColor: kPrimaryColor,
             shape: RoundedRectangleBorder(
@@ -244,7 +246,11 @@ class SignUpPage extends StatelessWidget {
       backgroundColor: kBackgroundColor,
       body: ListView(
         padding: EdgeInsets.all(defaultMargin),
-        children: [title(), inputSection(), tacButton(), Column()],
+        children: [
+          title(),
+          inputSection(),
+          tacButton(),
+        ],
       ),
     );
   }

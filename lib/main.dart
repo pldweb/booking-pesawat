@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:pertama_kali2/ui/pages/bonus_page.dart';
 
 import 'ui/pages/get_started_pages.dart';
 import 'ui/pages/sign_up_page.dart';
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => SplashPage(),
         '/get-started': (context) => GetStartedPage(),
         '/sign-up': (context) => SignUpPage(),
+        '/bonus': (context) => BonusPage(),
       },
     );
   }
