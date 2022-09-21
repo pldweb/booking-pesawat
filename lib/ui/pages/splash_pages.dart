@@ -3,7 +3,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:pertama_kali2/ui/pages/get_started_pages.dart';
+import 'package:pertama_kali2/ui/pages/get_started_page.dart';
 import '../../shared/theme.dart';
 
 class SplashPage extends StatefulWidget {

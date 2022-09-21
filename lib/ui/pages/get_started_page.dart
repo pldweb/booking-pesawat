@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:pertama_kali2/ui/widget/custom_button.dart';
 import '../../shared/theme.dart';
 
 class GetStartedPage extends StatelessWidget {
@@ -47,28 +48,13 @@ class GetStartedPage extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                 ),
-                Container(
+                CustomButton(
                   width: 220,
-                  height: 55,
                   margin: EdgeInsets.only(top: 50, bottom: 80),
-                  child: TextButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/sign-up');
-                    },
-                    style: TextButton.styleFrom(
-                      backgroundColor: kPrimaryColor,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(defaultRadius),
-                      ),
-                    ),
-                    child: Text(
-                      'Get Started',
-                      style: whiteTextStyle.copyWith(
-                        fontWeight: medium,
-                        fontSize: 18,
-                      ),
-                    ),
-                  ),
+                  title: 'Get Started',
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/sign-up');
+                  },
                 ),
               ],
             ),

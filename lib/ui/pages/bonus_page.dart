@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:pertama_kali2/shared/theme.dart';
+import 'package:pertama_kali2/ui/widget/custom_button.dart';
 
 class BonusPage extends StatelessWidget {
   const BonusPage({super.key});
@@ -130,31 +131,15 @@ class BonusPage extends StatelessWidget {
     }
 
     Widget startButton() {
-      return Container(
-        margin: EdgeInsets.only(top: 50),
-        width: 220,
-        height: 55,
-        child: TextButton(
+      return CustomButton(
+          width: 220,
+          margin: EdgeInsets.only(
+            top: 50,
+          ),
+          title: 'Start Fly Now',
           onPressed: () {
-            Navigator.pushNamed(context, '/bonus');
-          },
-          style: TextButton.styleFrom(
-            backgroundColor: kPrimaryColor,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(
-                defaultRadius,
-              ),
-            ),
-          ),
-          child: Text(
-            'Start Fly Now',
-            style: whiteTextStyle.copyWith(
-              fontSize: 18,
-              fontWeight: medium,
-            ),
-          ),
-        ),
-      );
+            Navigator.pushNamed(context, '/main');
+          });
     }
 
     return Scaffold(

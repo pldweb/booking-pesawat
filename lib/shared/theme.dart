@@ -9,6 +9,7 @@ Color kGreenColor = Color(0xff0EC3AE);
 Color kRedColor = Color(0xffEB70A5);
 Color kBackgroundColor = Color(0xffFAFAFA);
 Color kInactiveColor = Color(0xffDBD7EC);
+Color kTransparentColor = Colors.transparent;
 
 double defaultMargin = 24.0;
 double defaultRadius = 17.0;

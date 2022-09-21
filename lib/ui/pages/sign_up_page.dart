@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pertama_kali2/shared/theme.dart';
+import 'package:pertama_kali2/ui/widget/custom_button.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({super.key});
@@ -179,31 +180,11 @@ class SignUpPage extends StatelessWidget {
     }
 
     Widget submitButton() {
-      return Container(
-        margin: EdgeInsets.only(top: 10),
-        width: double.infinity,
-        height: 55,
-        child: TextButton(
+      return CustomButton(
+          title: 'Get Started',
           onPressed: () {
             Navigator.pushNamed(context, '/bonus');
-          },
-          style: TextButton.styleFrom(
-            backgroundColor: kPrimaryColor,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(
-                defaultRadius,
-              ),
-            ),
-          ),
-          child: Text(
-            'Get Started',
-            style: whiteTextStyle.copyWith(
-              fontSize: 18,
-              fontWeight: medium,
-            ),
-          ),
-        ),
-      );
+          });
     }
 
     Widget tacButton() {
