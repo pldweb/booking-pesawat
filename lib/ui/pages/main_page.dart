@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:pertama_kali2/shared/theme.dart';
-import 'package:pertama_kali2/ui/pages/home_page.dart';
-import 'package:pertama_kali2/ui/widget/custom_bottom_navigation_item.dart';
+import 'package:booking_pesawat/shared/theme.dart';
+import 'package:booking_pesawat/ui/pages/home_page.dart';
+import 'package:booking_pesawat/ui/widget/custom_bottom_navigation_item.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});

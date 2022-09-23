@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:pertama_kali2/ui/pages/bonus_page.dart';
-import 'package:pertama_kali2/ui/pages/home_page.dart';
-import 'package:pertama_kali2/ui/pages/main_page.dart';
+import 'package:booking_pesawat/ui/pages/bonus_page.dart';
+import 'package:booking_pesawat/ui/pages/home_page.dart';
+import 'package:booking_pesawat/ui/pages/main_page.dart';
 
 import 'ui/pages/get_started_page.dart';
 import 'ui/pages/sign_up_page.dart';

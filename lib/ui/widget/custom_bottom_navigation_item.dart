@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:pertama_kali2/shared/theme.dart';
+import 'package:booking_pesawat/shared/theme.dart';
 
 class CustomBottomNavigationItem extends StatelessWidget {
   final String imageUrl;

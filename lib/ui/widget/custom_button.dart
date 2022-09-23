@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pertama_kali2/shared/theme.dart';
+import 'package:booking_pesawat/shared/theme.dart';
 
 class CustomButton extends StatelessWidget {
   final String title;

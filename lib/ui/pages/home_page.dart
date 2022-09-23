@@ -1,12 +1,10 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_import
-
-import 'dart:html';
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_import, avoid_web_libraries_in_flutter
 
 import 'package:flutter/material.dart';
-import 'package:pertama_kali2/shared/theme.dart';
-import 'package:pertama_kali2/ui/widget/custom_subtitle.dart';
-import 'package:pertama_kali2/ui/widget/custom_title.dart';
-import 'package:pertama_kali2/ui/widget/destination_card.dart';
+import 'package:booking_pesawat/shared/theme.dart';
+import 'package:booking_pesawat/ui/widget/custom_subtitle.dart';
+import 'package:booking_pesawat/ui/widget/custom_title.dart';
+import 'package:booking_pesawat/ui/widget/destination_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

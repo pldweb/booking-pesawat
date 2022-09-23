@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:pertama_kali2/ui/widget/custom_button.dart';
+import 'package:booking_pesawat/ui/widget/custom_button.dart';
 import '../../shared/theme.dart';
 
 class GetStartedPage extends StatelessWidget {

@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:pertama_kali2/shared/theme.dart';
-import 'package:pertama_kali2/ui/widget/custom_button.dart';
-import 'package:pertama_kali2/ui/widget/custom_text_form_field.dart';
-import 'package:pertama_kali2/ui/widget/custom_title.dart';
+import 'package:booking_pesawat/shared/theme.dart';
+import 'package:booking_pesawat/ui/widget/custom_button.dart';
+import 'package:booking_pesawat/ui/widget/custom_text_form_field.dart';
+import 'package:booking_pesawat/ui/widget/custom_title.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({super.key});
