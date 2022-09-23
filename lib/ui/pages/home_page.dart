@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_import, avoid_web_libraries_in_flutter
 
+import 'package:booking_pesawat/ui/widget/destination_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:booking_pesawat/shared/theme.dart';
 import 'package:booking_pesawat/ui/widget/custom_subtitle.dart';
@@ -73,70 +74,50 @@ class HomePage extends StatelessWidget {
 
     Widget newDestination() {
       return Container(
-          padding: EdgeInsets.symmetric(
-            horizontal: 24,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                margin: EdgeInsets.only(
-                  bottom: 16,
-                ),
-                child: Text(
-                  'New This Year',
-                  style: blackTextStyle.copyWith(
-                    fontSize: 18,
-                    fontWeight: semibold,
-                  ),
+        margin: EdgeInsets.only(
+          bottom: 140,
+        ),
+        padding: EdgeInsets.symmetric(
+          horizontal: 24,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              margin: EdgeInsets.only(
+                bottom: 16,
+              ),
+              child: Text(
+                'New This Year',
+                style: blackTextStyle.copyWith(
+                  fontSize: 18,
+                  fontWeight: semibold,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10),
-                width: double.infinity,
-                height: 90,
-                decoration: BoxDecoration(
-                  color: kWhiteColor,
-                  borderRadius: BorderRadius.circular(
-                    defaultRadius,
-                  ),
-                ),
-                child: Row(children: [
-                  Container(
-                    width: 70,
-                    height: 70,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(
-                        15,
-                      ),
-                      image: DecorationImage(
-                        image: AssetImage(
-                          'assets/image_destination6.png',
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Column(
-                      children: [
-                        Text(
-                          'Danau Beratan',
-                          style: blackTextStyle.copyWith(
-                            fontSize: 18,
-                            fontWeight: medium,
-                          ),
-                        ),
-                        Text(
-                          'Singaraja',
-                          style: greyTextStyle,
-                        ),
-                      ],
-                    ),
-                  ),
-                ]),
-              ),
-            ],
-          ));
+            ),
+            DestinationTile(
+              name: 'Danau Beratan',
+              city: 'Singa Raja',
+              imageUrl: 'assets/image_destination6.png',
+            ),
+            DestinationTile(
+              name: 'Danau Beratan',
+              city: 'Singa Raja',
+              imageUrl: 'assets/image_destination6.png',
+            ),
+            DestinationTile(
+              name: 'Danau Beratan',
+              city: 'Singa Raja',
+              imageUrl: 'assets/image_destination6.png',
+            ),
+            DestinationTile(
+              name: 'Danau Beratan',
+              city: 'Singa Raja',
+              imageUrl: 'assets/image_destination6.png',
+            ),
+          ],
+        ),
+      );
     }
 
     return ListView(
