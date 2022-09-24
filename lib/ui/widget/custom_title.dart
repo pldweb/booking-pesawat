@@ -14,7 +14,6 @@ class CustomTitle extends StatelessWidget {
         fontSize: 24,
         fontWeight: semibold,
       ),
-      overflow: TextOverflow.ellipsis,
     );
   }
 }
