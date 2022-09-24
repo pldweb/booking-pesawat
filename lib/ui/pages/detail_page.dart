@@ -126,6 +126,8 @@ class DetailPage extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
+
+            // NOTE: DETAIL DESTINATION
             Container(
               margin: EdgeInsets.symmetric(
                 horizontal: 25,
@@ -232,6 +234,8 @@ class DetailPage extends StatelessWidget {
                 ],
               ),
             ),
+
+            //  NOTE: TOTAL
             Container(
               margin: EdgeInsets.symmetric(
                 horizontal: 25,

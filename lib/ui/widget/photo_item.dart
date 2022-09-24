@@ -25,6 +25,7 @@ class PhotoItem extends StatelessWidget {
           image: AssetImage(
             photo,
           ),
+          fit: BoxFit.cover,
         ),
       ),
     );

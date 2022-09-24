@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:booking_pesawat/ui/pages/checkout_page.dart';
 import 'package:booking_pesawat/ui/pages/choose_seat_page.dart';
 import 'package:flutter/material.dart';
 import 'package:booking_pesawat/ui/pages/bonus_page.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/main': (context) => MainPage(),
         '/home': (context) => HomePage(),
         '/choose': (context) => ChooseSeatPage(),
+        '/checkout': (context) => CheckoutPage(),
       },
     );
   }

@@ -6,7 +6,18 @@ import 'package:flutter/material.dart';
 import '../../shared/theme.dart';
 
 class DestinationCard extends StatelessWidget {
-  const DestinationCard({super.key});
+  final String imageUrl;
+  final String nameDestination;
+  final String city;
+  final double rating;
+
+  const DestinationCard({
+    super.key,
+    required this.imageUrl,
+    required this.nameDestination,
+    required this.city,
+    this.rating = 0.0,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +52,7 @@ class DestinationCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(13),
                 image: DecorationImage(
                   image: AssetImage(
-                    'assets/image_destination1.png',
+                    imageUrl,
                   ),
                   fit: BoxFit.cover,
                 ),
@@ -74,7 +85,7 @@ class DestinationCard extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        '4.8',
+                        rating.toString(),
                         style: blackTextStyle.copyWith(
                           fontWeight: medium,
                         ),
@@ -85,25 +96,26 @@ class DestinationCard extends StatelessWidget {
               ),
             ),
             Container(
-                padding: EdgeInsets.only(left: 8),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Lake Ciliwung',
-                      style: blackTextStyle.copyWith(
-                        fontWeight: semibold,
-                        fontSize: 18,
-                      ),
+              padding: EdgeInsets.only(left: 8),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    nameDestination,
+                    style: blackTextStyle.copyWith(
+                      fontWeight: semibold,
+                      fontSize: 18,
                     ),
-                    Text(
-                      'Tangerang',
-                      style: greyTextStyle.copyWith(
-                        fontWeight: medium,
-                      ),
+                  ),
+                  Text(
+                    city,
+                    style: greyTextStyle.copyWith(
+                      fontWeight: medium,
                     ),
-                  ],
-                )),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

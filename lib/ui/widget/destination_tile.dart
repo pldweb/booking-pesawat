@@ -5,14 +5,14 @@ import 'package:flutter/material.dart';
 import 'package:booking_pesawat/shared/theme.dart';
 
 class DestinationTile extends StatelessWidget {
-  final String name;
+  final String nameDestination;
   final String city;
   final String imageUrl;
   final double rating;
 
   const DestinationTile({
     super.key,
-    required this.name,
+    required this.nameDestination,
     required this.city,
     required this.imageUrl,
     this.rating = 0.0,
@@ -35,7 +35,6 @@ class DestinationTile extends StatelessWidget {
           bottom: 16,
         ),
         width: double.infinity,
-        height: 90,
         decoration: BoxDecoration(
           color: kWhiteColor,
           borderRadius: BorderRadius.circular(
@@ -67,11 +66,14 @@ class DestinationTile extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    name,
+                    nameDestination,
                     style: blackTextStyle.copyWith(
-                      fontSize: 18,
+                      fontSize: 16,
                       fontWeight: medium,
+                      height: 1.1,
+                      overflow: TextOverflow.ellipsis,
                     ),
+                    maxLines: 2,
                   ),
                   Text(
                     city,
