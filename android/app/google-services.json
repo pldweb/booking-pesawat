@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "862562890732",
+    "project_id": "airplane-7cc62",
+    "storage_bucket": "airplane-7cc62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862562890732:android:772ff5f89e10137032c6c9",
+        "android_client_info": {
+          "package_name": "com.paldi.booking_pesawat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862562890732-qrcmu475jd4hhgmv8c56knsvcqkkl0cl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2pgsKs2cDaki_-JVYeJFHpmfT5yCz-4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862562890732-qrcmu475jd4hhgmv8c56knsvcqkkl0cl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
